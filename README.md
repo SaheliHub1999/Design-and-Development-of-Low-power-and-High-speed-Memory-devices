@@ -39,7 +39,17 @@ Fig.<br>
 <br>
 <br>
 
-![Screenshot-1](https://github.com/user-attachments/assets/ced1966a-2fa8-4b69-80e5-5edb422c35e9)
+![Screenshot (63)](https://github.com/user-attachments/assets/13342a3b-04e0-4a93-b34b-9856e236e7ff)
+
+<br>
+<br>
+<br>
+<br>
+
+![Screenshot (62)](https://github.com/user-attachments/assets/188c27ea-a1dc-4adc-9072-011dc09a0f66)
+<br>
+
+
 <br>
 <br><h2>4. Working operation :</h2>
 The SRAM cell performs three operation
@@ -61,9 +71,15 @@ step 2: Apply write pulse at gate of NM2 and NM4. when write pulse is applied,
 NM2 and NM4 will turn on. Q bar is 1 means NM1 is on . But after apply Write 
 pulse voltage difference occur between Q bar and bit bar and voltage will going to
 decrease at Q bar and less than threshold voltage of NM1. NM1 will turn off and
-Q will becomes 1.
+Q will becomes 1. See below fig for write operation
 <br>
+<br>
+<br>
+![Screenshot (65)](https://github.com/user-attachments/assets/c22a5160-283b-4077-8178-e9319d0543cf)
 
+<br>
+<br>
+<br>
  <h3>Read operation -</h3>
  In case of read operation, Let Q=1 and you want to read 1.
  So you have to check wheather logic 1 is stored or not.
@@ -77,7 +93,14 @@ Q will becomes 1.
  <br>
  Step 3: Connect a comparator or Sense amplifier between bit and bit bar line.
  Now, bit line is grater than bit bar line voltage . So in this case the output we get 
- is logic 1. In this way we can read the value.
+ is logic 1. In this way we can read the value. See below fif for Read operation.
+<br>
+<br>
+<br>
+![Screenshot (66)](https://github.com/user-attachments/assets/ac4600f5-c139-4ae7-8eef-1423a2367455)
+
+<br>
+<br>
 <br>
 <h3> Sense amplifier :</h3>
 The sense amplifier is based on the voltage mode's 
@@ -91,7 +114,11 @@ a full-swing output. The voltage mode sensing amplifier circuit is illustrated i
 <br>
 <br>
 <br>
+![Screenshot (64)](https://github.com/user-attachments/assets/04f11f06-645b-43c5-a644-de0222795686)
 
+<br>
+<br>
+<br>
 ![Screenshot-20](https://github.com/user-attachments/assets/6ce88fdd-fdaa-45b9-ab52-20ed0c9fa4bb)
 <br>
 <br>
@@ -124,7 +151,8 @@ be done and the data will remain in the hold state into SRAM.
 <br>
 <br>
 
-![Screenshot-29](https://github.com/user-attachments/assets/00a87306-9d36-4fc3-a390-0d568bd51895)
+![Screenshot (61)](https://github.com/user-attachments/assets/add6c404-b7ac-4e42-aebb-93da3110d50e)
+
 
 
 <br>
