@@ -75,6 +75,7 @@ Q will becomes 1. See below fig for write operation
 <br>
 <br>
 <br>
+
 ![Screenshot (65)](https://github.com/user-attachments/assets/c22a5160-283b-4077-8178-e9319d0543cf)
 
 <br>
@@ -97,6 +98,7 @@ Q will becomes 1. See below fig for write operation
 <br>
 <br>
 <br>
+
 ![Screenshot (66)](https://github.com/user-attachments/assets/ac4600f5-c139-4ae7-8eef-1423a2367455)
 
 <br>
@@ -119,6 +121,7 @@ a full-swing output. The voltage mode sensing amplifier circuit is illustrated i
 <br>
 <br>
 <br>
+
 ![Screenshot-20](https://github.com/user-attachments/assets/6ce88fdd-fdaa-45b9-ab52-20ed0c9fa4bb)
 <br>
 <br>
