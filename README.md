@@ -1,51 +1,33 @@
-# Design and Development of Low-power and High speed Memory devices
+# VLSI design and analysis of 6T SRAM device Using Cadence EDA Tool.
 <br>
-<h2>I. Abstract :</h2>
-Recently, speed and power 
-consumption are becoming the most important part 
-of semiconductor industries. This project is focusing 
-on the designing of low-power and high-speed 
-memory devices. starting with the working operation 
-of a standard conventional static random access 
-memory SRAM 6T cell. In this work, the techniques 
-to minimize the power consumption of SRAM 6T 
-cell with the minimum delay during its read 
-operation is analyzed and designed. It is evident 
-from the results that the SRAM cell which acts as a 
-cache memory is better in performance with 
-minimum power.
+<h2>1. Abstract :</h2> 
+SRAM is now widely used in System on Chip and high performance VLSI circuit.
+Adjustment of performance parameters may results in total chip performance
+optimization. SRAM cell read and write stability are key challenges in
+nanoscale CMOS technology. SNM fluctuation is also detected when the 
+supply voltage varies. This paper implements 6T SRAM cell with read and write operation.
+and also Static Noise Margin observation. CMOS SRAM cell is very less
+power consuming and high speed device and have less read time time.
+pmos transistor with less width reduce the power consumption. and lastly 
+this paper also included the layout design of 6T SRAM cell.
 <br>Keyword- SRAM
 <br>
 <br>
-<h2>II. Introduction :</h2>
-Static Random Access memory takes a large area 
-due to the number of transistors for a single bit. The cell 
-generally employs a minimum number of the transistor to 
-employ high packaged density. As long as power is being 
-provided, Static Random Access memory (SRAM) is a 
-static form of random access memory (RAM), keeps data 
-bits in its memory. The SRAM is quite similar to a latch in 
-which two inverters are connected in cross-coupled. 
-The cell requires six transistors per bit. The power 
-dissipation and propagation delay when reading and writing 
-the value into the SRAM cell are two design considerations 
-for SRAM. Dynamic power dissipation is the power lost
-during read and write operations. It aids in figuring out how 
-long portable gadgets' batteries will last. The reading and 
-writing delay determines the SRAM's speed. To read data 
-from memory, a sense amplifier is utilized. Its job is to 
-detect the low-power signals from a bit line that corresponds 
-to a data bit (1 or 0) recorded in a memory cell and amplify 
-the small voltage swing to identifiable logic levels so the 
-data can be properly understood. In addition, the precharge 
-circuit is also analyzed prior to allowing a main contactors 
-to close, a precharge circuit permits the current to flow in a 
-controlled manner while the voltage level increases to the
-very close to the source voltage. All the simulations are 
-done in cadence virtuoso 180nm technology. 
+<h2>2. Introduction :</h2>
+Static Random Access (SRAM) constitues a large percentage of area
+in the VLSI designs due to the high number of transistors for a single
+SRAM cell. Mobile devies battery life may be estimated using this tool.
+SRAM speed is determined by the amount of time it takes to read and 
+write data. As long as power is being provided it keeps data bits in its memory.
+SRAM is quite simiar to latch in which two inverters are connected in cross-coupled.
+The cell requires six trasistor per bit. Nanometer scale design present a wide range
+of design challenges.SRAM cell design has a major issue with stability. MOSFET aspect 
+ratio and operating conditions have an impact on memory stability. Stability of memory refers 
+to its capacity to perform its intended functions. Static Noice Margin(SNM) measures
+the reliability of SRAM cells.All the simulations are done in cadence virtuoso tool with 180nm technology. 
 <br>
 <br>
-<h2>III. Design :</h2>
+<h2>3. Design :</h2>
 <h3>A. Conventional SRAM 6T Cell-</h3>
 The design of an SRAM 6T cell is similar to a latch in 
 which two CMOS inverters are connected back to back (M1-
@@ -59,19 +41,19 @@ Fig.<br>
 
 ![Screenshot-1](https://github.com/user-attachments/assets/ced1966a-2fa8-4b69-80e5-5edb422c35e9)
 <br>
-<br><h2>III. Working operation :</h2>
+<br><h2>4. Working operation :</h2>
 The SRAM cell performs three operation
 <br>
-1- Write operation
+I- Write operation
 <br>
-2- Read operation 
+II- Read operation 
 <br>
-3- Hold operation
+III- Hold operation
 <br>
 <br>
 
  <h3>Write operation -</h3>
-When word line (WL) is high, the data should be 
+In case of write operation When word line (WL) is high, the data should be 
 written on Q is 0 and QB is 1 and the word line is enabled 
 1 to access the lines BL and BLB. The BL and BLB act 
 as input. The BLB is connected to the ground because QB 
