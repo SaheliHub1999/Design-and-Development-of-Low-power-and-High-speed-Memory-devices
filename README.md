@@ -30,9 +30,9 @@ the reliability of SRAM cells.All the simulations are done in cadence virtuoso t
 <h2>3. Design :</h2>
 <h3>A. Conventional SRAM 6T Cell-</h3>
 The design of an SRAM 6T cell is similar to a latch in 
-which two CMOS inverters are connected back to back (M1-
-M2 and M3-M4) with two secondary nmos transistors (M5-
-M6) are connected to the paired bit line BL and bit line bar 
+which two CMOS inverters are connected back to back (PM1-
+NM1 and PM0-NM0) with two secondary nmos transistors (NM2-
+NM4) are connected to the paired bit line BL and bit line bar 
 BLB.These two transistors are connected to the word line 
 to perform the access of read and write operation as shown in 
 Fig.<br>
@@ -133,7 +133,7 @@ be done and the data will remain in the hold state into SRAM.
 <br>
 
 <BR>
-<H2>IV. Simulations :</H2>
+<H2>IV. Simulations and Result :</H2>
 <br>
 <br>
 
@@ -159,15 +159,14 @@ be done and the data will remain in the hold state into SRAM.
 
 
 <br>
-<h2>5. Results & Conclusion :</h2>
-The project examine the performance of a
-conventional 6T SRAM in read and write operations in 
-terms of power-delay product. The results were performed
-in 180nm technology, which demonstrates that as the 
-precharge voltage is decreased, power dissipation is 
+<h2>5. Conclusion :</h2>
+This project examine the performance of a
+6T SRAM in read and write operations . 
+The results were performed in 180nm technology, which demonstrates 
+that as the precharge voltage is decreased, power dissipation is 
 improved. For the stability of the memory cell to be 
-maintained, the supply voltage must be chosen properly. 
-By utilizing various low-power the performance 
+maintained, the supply voltage must be chosen properly for decresing power
+dissipation.By utilizing various low-power the performance 
 of 6T SRAM cells can be further improved.
 
 
