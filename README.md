@@ -53,65 +53,42 @@ III- Hold operation
 <br>
 
  <h3>Write operation -</h3>
-In case of write operation When word line (WL) is high, the data should be 
-written on Q is 0 and QB is 1 and the word line is enabled 
-1 to access the lines BL and BLB. The BL and BLB act 
-as input. The BLB is connected to the ground because QB 
-is 1. There will be some voltage difference, the voltage will decrease for transistors M1 and M2. If the voltage is 
-less than the threshold voltage of M2 then M2 is turned off 
-and M1is turned on. That means output Q will be 1. So 
-input Q is 0 and output Q=1 means data is written.
+In case of write operation, If you want to write 1 in memory cell then
+first let Q=0 means now 0 is stored in the memory cell. you want to write 1.
+step 1: Forecefully connect bit bar =0 by initially discharging capacitor.
 <br>
-
-
+step 2: Apply write pulse at gate of NM2 and NM4. when write pulse is applied,
+NM2 and NM4 will turn on. Q bar is 1 means NM1 is on . But after apply Write 
+pulse voltage difference occur between Q bar and bit bar and voltage will going to
+decrease at Q bar and less than threshold voltage of NM1. NM1 will turn off and
+Q will becomes 1.
+<br>
 
  <h3>Read operation -</h3>
-WL is high, t memory should hold some value. 
-Now Q is 1 and QB is complementing 0.Now 
-memory has some value stored and to read BL and BLB 
-now act as output lines and these lines will be precharged 
-by voltage VDD at both nodes Q and QB. Now there is 
-no voltage difference at node Q =1 and T5 so there will 
-be no discharge but on another side QB = 0 and the 
-voltage is VDD and there is a voltage difference so there 
-will be discharge at node QB and node voltage at BLB 
-will start discharging. Now the values stored in BL and 
-BLB will be sent to the sense amplifier which helps as a 
-comparator and it says if BLB decreases then the output 
-will be 1 it means we successfully read from the memory 
-because the memory has a value of 1 and getting read 1 
-as output.
+ In case of read operation, Let Q=1 and you want to read 1.
+ So you have to check wheather logic 1 is stored or not.
+ Step 1: Bit and Bit bar line are precharge to logic 1. 
+ Means Both capacitor are precharged to logic 1. 
+ <br>
+ Step 2: Apply Read Pulse at the gate of NM2 and NM4 . When Read pulse is 
+ applied, NM2 and NM4 will turn on. In this time since Q bar is 0 so, 
+ a voltage difference will occur between q bar and bit bar. capacitor will
+ discharge through NM4. bit bar will decrese.
+ <br>
+ Step 3: Connect a comparator or Sense amplifier between bit and bit bar line.
+ Now, bit line is grater than bit bar line voltage . So in this case the output we get 
+ is logic 1. In this way we can read the value.
 <br>
-<br>
-<h3>B. Sense amplifier :</h3>
+<h3> Sense amplifier :</h3>
 The sense amplifier is based on the voltage mode's 
-operation on the differential voltage created by the bit-lines, The circuit is composed of cross-coupled inverters 
-that turn the bit-line voltage differential at their input into 
-a full-swing output.The voltage mode sensing 
-amplifier circuit is illustrated in the figure.
+operation on the differential voltage created by the bit-lines, The circuit is composed of 
+cross-coupled inverters that turn the bit-line voltage differential at their input into 
+a full-swing output. The voltage mode sensing amplifier circuit is illustrated in the figure.
 <br>
 <br>
 
 ![Screenshot-19](https://github.com/user-attachments/assets/9c614303-b22a-4216-ac3a-a60eff595054)
 <br>
-<br>
-<br>The column bit-lines of the cell are connected to 
-the BL and BLB(BL_)inputs. M2-M4 and M3-M1 work 
-together to create the inverters, which change the 
-differential voltage on the bit lines into a full swing at the 
-output. Pre-charging the internal nodes Q, and QB of this 
-circuit through the bit-lines is accomplished by the pre-charge circuitry. To enable the sense amplifier, the 
-memory cell is connected to it via M1 and M2. M5 is 
-utilized to activate the sense amplifier. The nodes inside 
-the output inverters insulate the sense amplifier from the 
-external load. Voltage based sense amplifier action 
-occurs in two stages. Bit-lines and the nodes Q and QB 
-are pre-charged high while the Pre charge circuit (PCH)
-is kept inactive during the first phase, also known as the 
-pre-charge phase. In the evaluation step, the select line is 
-brought down to link the sense amplifier to the memory 
-cell Fig.
-
 <br>
 <br>
 
@@ -120,9 +97,9 @@ cell Fig.
 <br>
 <br>
 <h3>Hold Operation -</h3>
-For the hold operation, turn off the word line WL 
+For the hold operation, make the word line (WL) 
 from 1 to 0. That means no read-and-write operation will 
-be done and the data will remain in the hold state.
+be done and the data will remain in the hold state into SRAM.
 <br>
 
 <BR>
@@ -151,17 +128,15 @@ be done and the data will remain in the hold state.
 
 
 <br>
-<h2>VI. Results & Conclusion :</h2>
-Hence, the project examine the performance of a
+<h2>5. Results & Conclusion :</h2>
+The project examine the performance of a
 conventional 6T SRAM in read and write operations in 
 terms of power-delay product. The results were performed
 in 180nm technology, which demonstrates that as the 
 precharge voltage is decreased, power dissipation is 
 improved. For the stability of the memory cell to be 
 maintained, the supply voltage must be chosen properly. 
-Even though power consumption and delay are reduced, 
-strategies, stability should be maintained for reliability 
-concerns.By utilizing various low-power the performance 
+By utilizing various low-power the performance 
 of 6T SRAM cells can be further improved.
 
 
